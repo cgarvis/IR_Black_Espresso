@@ -1,0 +1,174 @@
+/*
+	@theme IR_Black
+	@override-placeholders html, xml, sourcecode.js, php
+*/
+
+:document-base {
+	color: #EDEDED;
+	background-color: #000000;
+	insertion-point-color: #EDEDED;
+	selection-background-color: #333333;
+	current-line-background-color: #FFFF24;
+}
+
+tag, source, sourcecode {
+	spell-check: disabled;
+}
+
+tag, tag > string > punctuation {
+	color: #96CBFE;
+}
+
+tag > name, tag > string.quoted - punctuation, attribute-with-value > string.quoted - punctuation {
+	oldcolor: #96CBFE;
+}
+
+tag>name {
+	color: #96CBFE;
+}
+
+attribute-name, punctuation.definition.tag {
+	color: #ffd7ab;
+	newcolor: #6FBFFF;
+}
+
+tag > string.quoted, tag > attribute-with-value > string.quoted {
+	color: #d183ad;
+	background-color: transparent; /* FIXME */
+}
+
+tag > string > punctuation {
+	font-weight: normal;
+}
+
+css.embedded attribute-name, css.embedded punctuation.definition.tag {
+	color: #AAD3FD;
+}
+
+comment, comment>punctuation, tag.doctype, tag.doctype > *, tag.doctype > string.quoted {
+	color: #7C7C7C;
+	font-weight: normal;
+}
+
+tag.h1, tag.h1 * {
+	font-weight: bold;
+	color: #fff;
+}
+
+string.quoted-alt {
+	bluecolor: #1a93ae;
+	bluebackground-color: #f4f9fe;
+	color: #1aa1a1;
+	background-color: rgba(235,252,254,0.5);
+}
+
+string.quoted {
+	color: #A8FF60;
+}
+
+string.quoted > punctuation {
+	color: #00A0A0;
+}
+
+string.regex {
+	font-weight: bold;
+	background-color: #FF8000;
+}
+
+string.quoted > expression {
+	color:  #EDEDED;
+}
+
+string.quoted > expression > variable {
+	color: #8A9A95;
+}
+
+variable {
+	color: #C6C5FE;
+}
+
+variable.class {
+	color: #FFFFB6;
+}
+
+variable.function, keyword.language.function {
+	color: #EDEDED;
+}
+
+variable.property {
+	color: #EDEDED;
+}
+
+variable > punctuation {
+	color: #865fdb;
+}
+
+operator {
+	color: #96CBFE;
+}
+
+open-bracket, close-bracket {
+}
+
+support.function, function-call {
+	color: #DAD085;
+	font-weight: boldd;
+}
+
+keyword.control, storage.type {
+	color: #96CBFE;
+}
+
+class {
+	color: #FFFFB6;
+}
+
+class > name {
+	color: #FFFFB6;
+	text-decoration: underline;
+}
+
+class > inheritance {
+	 color: #9B5C2E;
+}
+
+function > name {
+	color: #FFD2A7;
+	font-weight: bold;
+}
+
+js.embedded {
+	color: #434343;
+}
+
+constant.numeric{
+	color: #FF73FD;
+	font-weight: bold;
+}
+constant {
+	color: #99CC99;
+}
+
+invalid {
+	color: #FD5FF1;
+}
+
+textile > header {
+	font-weight: bold;
+}
+
+keyword {
+	color: #96CBFE;
+}
+
+keyword.inheritance {
+	color: #9B5C2E;
+}
+
+punctuation.brace {
+	color: #EDEDED;
+}
+
+language-root {
+	color: #96CBFE;
+}
